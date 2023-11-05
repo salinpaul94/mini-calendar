@@ -4,7 +4,9 @@ let month = document.getElementById("month");
 let year = document.getElementById("year");
 
 let today = new Date();
+
+const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 date.innerHTML = today.getDate();
-day.innerHTML = today.getDay();
+day.innerHTML = weekDays[today.getDay()];
 month.innerHTML = today.getMonth();
 year.innerHTML = today.getFullYear();
