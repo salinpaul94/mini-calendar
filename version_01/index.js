@@ -7,3 +7,4 @@ let today = new Date();
 date.innerHTML = today.getDate();
 day.innerHTML = today.getDay();
 month.innerHTML = today.getMonth();
+year.innerHTML = today.getFullYear();
