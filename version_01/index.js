@@ -7,6 +7,7 @@ let currentTime = new Date()
 
 function updateCurrentTime() {
   document.getElementById("hours").innerHTML = currentTime.getHours() < 10 ? `0${currentTime.getHours()}` : currentTime.getHours();
+  document.getElementById("minutes").innerHTML = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
 }
 
 let today = new Date();
