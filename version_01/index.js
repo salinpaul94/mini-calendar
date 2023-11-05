@@ -6,3 +6,4 @@ let year = document.getElementById("year");
 let today = new Date();
 date.innerHTML = today.getDate();
 day.innerHTML = today.getDay();
+month.innerHTML = today.getMonth();
