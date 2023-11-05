@@ -6,9 +6,12 @@ let year = document.getElementById("year");
 let currentTime = new Date()
 
 function updateCurrentTime() {
+  console.log("hi");
   document.getElementById("hours").innerHTML = currentTime.getHours() < 10 ? `0${currentTime.getHours()}` : currentTime.getHours();
   document.getElementById("minutes").innerHTML = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
   document.getElementById("seconds").innerHTML = currentTime.getSeconds() < 10 ? `0${currentTime.getSeconds()}` : currentTime.getSeconds();
+  setTimeout(location.reload(), 1000);
+
 }
 
 let today = new Date();
@@ -21,4 +24,4 @@ day.innerHTML = weekDays[today.getDay()];
 month.innerHTML = months[today.getMonth()];
 year.innerHTML = today.getFullYear();
 
-window.addEventListener("DOMContentLoaded", setInterval(updateCurrentTime(), 1000));
+window.addEventListener("DOMContentLoaded", updateCurrentTime());
