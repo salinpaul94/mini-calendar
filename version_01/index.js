@@ -6,7 +6,7 @@ let year = document.getElementById("year");
 let currentTime = new Date()
 
 function updateCurrentTime() {
-
+  document.getElementById("hours").innerHTML = currentTime.getHours() < 10 ? `0${currentTime.getHours()}` : currentTime.getHours();
 }
 
 let today = new Date();
