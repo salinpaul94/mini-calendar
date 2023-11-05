@@ -25,7 +25,6 @@
 
 .left,
 .right {
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -34,8 +33,12 @@
 }
 
 .right {
+  width: 42%;
   background: #f4341e;
   color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.left {
+  width: 58%;
 }
