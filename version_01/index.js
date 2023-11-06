@@ -17,8 +17,10 @@ function updateCurrentTime() {
   //   .getMilliseconds()}` : currentTime.getMilliseconds();
 
   document.getElementById("12-hour").innerHTML = currentTime.getHours() > 12 ? currentTime.getHours() - 12 : currentTime.getHours();
-  
-  
+
+  document.getElementById("12-minutes").innerHTML = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
+
+
 }
 
 let today = new Date();
