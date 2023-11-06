@@ -20,7 +20,9 @@ function updateCurrentTime() {
 
   document.getElementById("12-minutes").innerHTML = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
 
-  document.getElementById("12-AM-PM").innerHTML = currentTime.getHours() > 12 ? "PM" : "AM"
+  document.getElementById("12-seconds").innerHTML = currentTime.getSeconds() < 10 ? `0${currentTime.getSeconds()}` : currentTime.getSeconds();
+
+  document.getElementById("12-AM-PM").innerHTML = currentTime.getHours() > 12 ? "PM" : "AM";
 }
 
 let today = new Date();
