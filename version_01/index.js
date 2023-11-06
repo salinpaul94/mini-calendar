@@ -8,8 +8,13 @@ let year = document.getElementById("year");
 function updateCurrentTime() {
   let currentTime = new Date();
   document.getElementById("hours").innerHTML = currentTime.getHours() < 10 ? `0${currentTime.getHours()}` : currentTime.getHours();
+
   document.getElementById("minutes").innerHTML = currentTime.getMinutes() < 10 ? `0${currentTime.getMinutes()}` : currentTime.getMinutes();
+
   document.getElementById("seconds").innerHTML = currentTime.getSeconds() < 10 ? `0${currentTime.getSeconds()}` : currentTime.getSeconds();
+
+  // document.getElementById("milli-seconds").innerHTML = currentTime.getMilliseconds() === 0 ? `0000` : currentTime.getMilliseconds() < 10 ? `000${currentTime.getMilliseconds()}` : currentTime.getMilliseconds() < 100 ? `00${currentTime.getMilliseconds()}` : currentTime.getMilliseconds() < 1000 ? `0${currentTime
+  //   .getMilliseconds()}` : currentTime.getMilliseconds();
 }
 
 let today = new Date();
